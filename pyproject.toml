@@ -17,4 +17,10 @@ dependencies = [
 ]
 
 [tool.ruff]
-lint.extend-select = ["I"]
+line-length = 80
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+extend-select = ["I"]
