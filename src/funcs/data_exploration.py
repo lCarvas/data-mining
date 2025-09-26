@@ -8,7 +8,7 @@ sns.set_theme()
 
 class DataExploration:
     @staticmethod
-    def import_data(path: str = "") -> pd.DataFrame:
+    def import_data(path: str = "C:/Users/Asus FX516P 9775/Documents/GitHub/data-mining/src") -> pd.DataFrame:
         """Imports the data from the specified path and outputs it as a dataframe
 
         Args:
