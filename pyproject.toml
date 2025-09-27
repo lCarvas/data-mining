@@ -16,6 +16,11 @@ dependencies = [
     "seaborn>=0.13.2",
 ]
 
+[dependency-groups]
+dev = [
+    "ruff>=0.13.2",
+]
+
 [tool.ruff]
 line-length = 80
 
