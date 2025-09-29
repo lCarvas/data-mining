@@ -10,6 +10,7 @@ dependencies = [
     "jupyterlab>=4.4.7",
     "matplotlib>=3.10.6",
     "minisom>=2.3.5",
+    "nbqa>=1.9.1",
     "numpy>=2.3.3",
     "pandas>=2.3.2",
     "scikit-learn>=1.7.1",
@@ -18,6 +19,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "nbqa>=1.9.1",
     "ruff>=0.13.2",
 ]
 
