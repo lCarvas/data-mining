@@ -68,3 +68,21 @@ class DataExploration:
             sns.boxplot(x=col, data=data)
 
         return data.describe(include="all")
+    
+    
+    @staticmethod
+    def correlation_matrix(data: pd.DataFrame, metricFeatures: list[str]):
+        """
+        Visualizing Correlations between numeric features
+        
+        
+        Args:
+            data (pd.DataFrame): Dataframe to be analyzed
+            metricFeatures (list[str]): Metric features of the dataframe
+        """
+    
+        correlation = data[metricFeatures].corr()
+        plt.figure(figsize=(10, 8))
+        sns.heatmap(correlation, annot=True, fmt=".2f", cmap="columns")
+        plt.title("correlation matrix")
+        plt.show()
