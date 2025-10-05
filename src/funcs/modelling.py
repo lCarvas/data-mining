@@ -1,5 +1,4 @@
 from sklearn.cluster import KMeans
-from sklearn.metrics import silhouette_score, davies_bouldin_score, calinski_harabasz_score
 from sklearn.decomposition import PCA
 import pandas as pd
 import numpy as np
